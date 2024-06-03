@@ -1,20 +1,36 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-public class ConfirmPassword extends AppCompatActivity {
+public class ConfirmPassword extends AppCompatActivity implements View.OnClickListener {
+
+    private Button changeButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_confirm_password);
-        
+
+        // Initialize the view
+        changeButton = findViewById(R.id.btn_change);
+
+        // Set click listener
+        changeButton.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (v.getId() == R.id.btn_change) {
+            // Navigate back to SignIn activity
+            Toast.makeText(getApplicationContext(), "Change clicked", Toast.LENGTH_SHORT).show();
+            Intent signInIntent = new Intent(ConfirmPassword.this, SignIn.class);
+            startActivity(signInIntent);
+        }
     }
 }
