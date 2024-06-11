@@ -6,15 +6,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import java.util.ArrayList;
 
 import com.example.myapplication.databinding.ActivityHomeBinding;
+import com.google.android.material.navigation.NavigationView;
 
 public class Home extends AppCompatActivity {
 
@@ -24,6 +28,8 @@ public class Home extends AppCompatActivity {
 
     sharedPreferences sharedPrefManager;
 
+    ImageButton more;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +37,16 @@ public class Home extends AppCompatActivity {
         setContentView(binding.getRoot());
 
 
+        more=findViewById(R.id.more);
 
+        more.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Home.this,naw_drawer.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         sharedPrefManager = new sharedPreferences(this);
 

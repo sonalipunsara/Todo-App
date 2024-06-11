@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CAF0F8"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/back"
+        android:onClick="ClickMenu"
+        android:src="@drawable/back" />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="435dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="20dp"
+        android:background="#97D9E7"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- Dashboard Section -->
+        <LinearLayout
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/dashborad"
+                android:layout_width="344dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Home"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/dashboard_img"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="Home"
+                android:src="@drawable/home" />
+
+        </LinearLayout>
+
+        <!-- Profile Section -->
+        <LinearLayout
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/profile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Profile"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/pro_img"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="Profile"
+                android:src="@drawable/profile" />
+
+        </LinearLayout>
+
+        <!-- Developer Info Section -->
+        <LinearLayout
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/dev_pro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dev Info"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/devpro_img"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="Developer Info"
+                android:src="@drawable/dev_info" />
+
+        </LinearLayout>
+
+        <!-- Logout Section -->
+        <LinearLayout
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/out"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Log Out"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/out_image"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="Logout"
+                android:src="@drawable/sign_out" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

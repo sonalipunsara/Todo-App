@@ -2,4 +2,7 @@
     <string name="app_name">My Application</string>
     <string name="remindme">RemindMe</string>
     <string name="stay_on_tasks_with_remindme">Stay on tasks with RemindMe</string>
+    <string name="more_options">more</string>
+    <string name="todo_2">logo</string>
+    <string name="back">back</string>
 </resources>
