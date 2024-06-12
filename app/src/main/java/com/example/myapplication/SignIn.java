@@ -36,17 +36,15 @@ public class SignIn extends AppCompatActivity implements View.OnClickListener {
         int id = v.getId();
         if (id == R.id.forgotp) {
             // Navigate to ForgotPassword activity
-            Toast.makeText(getApplicationContext(), "Forgot password clicked", Toast.LENGTH_SHORT).show();
             Intent forgotPasswordIntent = new Intent(SignIn.this, ForgotPassword.class);
             startActivity(forgotPasswordIntent);
         } else if (id == R.id.txtBtn_signup) {
             // Navigate to SignUp activity
-            Toast.makeText(getApplicationContext(), "Sign up clicked", Toast.LENGTH_SHORT).show();
             Intent signUpIntent = new Intent(SignIn.this, SignUp.class);
             startActivity(signUpIntent);
         } else if (id == R.id.txtBtn_signin) {
             // Navigate to Home activity
-            Toast.makeText(getApplicationContext(), "Sign in clicked", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),  "You are log in successfully", Toast.LENGTH_SHORT).show();
             Intent homeIntent = new Intent(SignIn.this, Home.class);
             startActivity(homeIntent);
         }

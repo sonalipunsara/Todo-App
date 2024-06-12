@@ -30,13 +30,15 @@
             android:id="@+id/username2"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/darckBack">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="2dp"
                 android:hint="Username"
+                android:background="@color/white"
                 android:textColor="@color/black"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -45,7 +47,9 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:passwordToggleEnabled="true">
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/black"
+            android:textColorHint="@color/darckBack">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -53,6 +57,7 @@
                 android:layout_marginBottom="2dp"
                 android:hint="Password"
                 android:inputType="textPassword"
+                android:background="@color/white"
                 android:textColor="@color/black"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -61,7 +66,9 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:passwordToggleEnabled="true">
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/black"
+            android:textColorHint="@color/darckBack">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -69,6 +76,7 @@
                 android:layout_marginBottom="2dp"
                 android:hint="Confirm Password"
                 android:inputType="textPassword"
+                android:background="@color/white"
                 android:textColor="@color/black"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -76,7 +84,8 @@
             android:id="@+id/email"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/darckBack">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -84,6 +93,7 @@
                 android:layout_marginBottom="2dp"
                 android:hint="Email"
                 android:inputType="textEmailAddress"
+                android:background="@color/white"
                 android:textColor="@color/black"/>
         </com.google.android.material.textfield.TextInputLayout>
 

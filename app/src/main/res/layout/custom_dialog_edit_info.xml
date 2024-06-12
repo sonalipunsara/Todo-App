@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#97D9E7"
+    android:padding="30dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:fontFamily="@font/adamina"
+        android:textSize="32dp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="255dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/darckBack"
+        android:hint="Enter new username" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/darckBack"
+        android:hint="Enter new email" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btn_dialog_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#28639D"
+            android:textColor="@color/white"
+            android:fontFamily="@font/adamina"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/btn_dialog_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#28639D"
+            android:text="OK"
+            android:textColor="@color/white"
+            android:fontFamily="@font/adamina"
+            android:layout_marginStart="60dp"/>
+    </LinearLayout>
+</LinearLayout>

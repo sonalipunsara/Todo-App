@@ -28,12 +28,10 @@ public class Welcome extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View v) {
         int id = v.getId();
         if (id == R.id.button) {
-            Toast.makeText(getApplicationContext(), "Sign in is clicked", Toast.LENGTH_SHORT).show();
             // Navigate to SignIn activity
             Intent signInIntent = new Intent(Welcome.this, SignIn.class);
             startActivity(signInIntent);
         } else if (id == R.id.button2) {
-            Toast.makeText(getApplicationContext(), "Sign up is clicked", Toast.LENGTH_SHORT).show();
             // Navigate to SignUp activity
             Intent signUpIntent = new Intent(Welcome.this, SignUp.class);
             startActivity(signUpIntent);

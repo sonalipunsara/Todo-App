@@ -32,7 +32,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="369dp"
+            android:layout_height="450dp"
             android:layout_marginTop="10dp"
             android:gravity="top"
             android:orientation="vertical"
@@ -41,7 +41,7 @@
             <ListView
                 android:id="@+id/todoitemlistview"
                 android:layout_width="match_parent"
-                android:layout_height="356dp"
+                android:layout_height="450dp"
                 android:dividerHeight="10dp"
                 tools:listitem="@layout/list_item">
 

@@ -28,7 +28,7 @@ public class ConfirmPassword extends AppCompatActivity implements View.OnClickLi
     public void onClick(View v) {
         if (v.getId() == R.id.btn_change) {
             // Navigate back to SignIn activity
-            Toast.makeText(getApplicationContext(), "Change clicked", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Password changed successfully", Toast.LENGTH_SHORT).show();
             Intent signInIntent = new Intent(ConfirmPassword.this, SignIn.class);
             startActivity(signInIntent);
         }

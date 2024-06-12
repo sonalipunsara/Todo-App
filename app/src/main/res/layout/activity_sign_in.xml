@@ -31,12 +31,14 @@
             android:id="@+id/username"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/darckBack">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="2dp"
+                android:background="@color/white"
                 android:hint="Username"
                 android:textColor="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -46,13 +48,16 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:passwordToggleEnabled="true">
+            android:textColorHint="@color/darckBack"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="2dp"
                 android:hint="Password"
+                android:background="@color/white"
                 android:inputType="textPassword"
                 android:textColor="@color/black"/>
         </com.google.android.material.textfield.TextInputLayout>

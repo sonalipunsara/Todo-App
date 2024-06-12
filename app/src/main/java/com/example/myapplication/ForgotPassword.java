@@ -28,7 +28,6 @@ public class ForgotPassword extends AppCompatActivity implements View.OnClickLis
     public void onClick(View v) {
         if (v.getId() == R.id.txtBtn_next) {
             // Navigate to ConfirmPassword activity
-            Toast.makeText(getApplicationContext(), "Next clicked", Toast.LENGTH_SHORT).show();
             Intent confirmPasswordIntent = new Intent(ForgotPassword.this, ConfirmPassword.class);
             startActivity(confirmPasswordIntent);
         }

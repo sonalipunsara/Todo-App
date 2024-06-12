@@ -40,12 +40,11 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
         int id = v.getId();
         if (id == R.id.txtBtn_signin) {
             // Navigate to ForgotPassword activity
-            Toast.makeText(getApplicationContext(), "Sign In clicked", Toast.LENGTH_SHORT).show();
             Intent forgotPasswordIntent = new Intent(SignUp.this, SignIn.class);
             startActivity(forgotPasswordIntent);
         } else if (id == R.id.txtBtn_signup) {
             // Navigate to SignUp activity
-            Toast.makeText(getApplicationContext(), "Sign Up clicked", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Registered successfully", Toast.LENGTH_SHORT).show();
             Intent signUpIntent = new Intent(SignUp.this, Home.class);
             startActivity(signUpIntent);
         }
