@@ -19,6 +19,9 @@
             android:name=".UserProfile"
             android:exported="false" />
         <activity
+            android:name=".naw_drawer"
+            android:exported="false"/>
+        <activity
             android:name=".Profile"
             android:exported="false" />
         <activity

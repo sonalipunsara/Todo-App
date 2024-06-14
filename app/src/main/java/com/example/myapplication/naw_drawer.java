@@ -26,7 +26,7 @@ public class naw_drawer extends AppCompatActivity {
     TextView dash, user, developer, logout;
 
 
-    @SuppressLint({"WrongViewCast", "MissingInflatedId"})
+    //@SuppressLint({"WrongViewCast", "MissingInflatedId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
